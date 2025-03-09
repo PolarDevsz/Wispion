@@ -1,0 +1,39 @@
+type: PowerTurret
+localizedName: Wispion
+description: Fires short bursts of delibiating energy pulses at nigger planes.
+health: 1500
+size: 3
+reload: 80
+range: 400
+targetGround: true
+targetAir: true
+recoil: 2
+inaccuracy: 0
+rotateSpeed: 15
+shootSound: laserbig
+loopSound: beam
+
+consumes: {
+  power: 3.5
+  coolant: {
+    amount: 0.5
+  }
+}
+
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 300
+  length: 450
+  width: 14
+  colors: [8000ff, aa00ff, ffffff]
+  hitEffect: hitMeltdown
+  despawnEffect: hitMeltdown
+  shake: 4
+}
+
+requirements: [
+  lead/350
+  titanium/1200
+  thorium/150
+]
+category: turret
